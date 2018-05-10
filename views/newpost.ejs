@@ -1,0 +1,11 @@
+<% include partials/header %>
+<h1>Add New Post</h1>
+
+<form action="newPost" method="POST">
+    <input type="text" name="title" id="title" placeholder="Post Title Here">
+    <input type="text" name="author" id="author" placeholder="Author Name">
+    <p><textarea name="content" id="content" cols="30" rows="10" placeholder="Add Content Here"></textarea></p>
+    <br><button type="submit">Add Post</button>
+</form>
+
+<% include partials/footer %>

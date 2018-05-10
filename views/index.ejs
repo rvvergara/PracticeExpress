@@ -1,0 +1,16 @@
+<% include partials/header %>
+<h1>Welcome to Practice App!</h1>
+
+<p><a href="./newPost">Add Post</a></p>
+
+<% posts.forEach(function(post){ %>
+    <h2><%= post.title %></h2>
+    <p><small>by: <%=post.author%></small></p>
+    <p>
+        <%= post.content%>
+    </p>
+    <p><a href="#">Read More</a></p>
+    <hr>
+<% }) %>
+
+<% include partials/footer %>
